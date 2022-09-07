@@ -1,33 +1,129 @@
-@charset "utf-8";
+/* CSSのリセット（消さないでください） */
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p,
+form, input, div {
+  margin: 0;
+  padding: 0;
+}
 
 body {
-    font-family: Arial;    
+  font-family: "Avenir Next", "Hiragino Kaku Gothic ProN W3", sans-serif;
 }
 
 li {
-    list-style: none;
-    float: left;
-    padding: 33px 20px 33px 20px;
+  list-style: none;
 }
 
+/* ここからCSSを記述してください */
 .header {
-    background-color: aquamarine;
-    height: 90px;
+  background-color: #26d0c9;
+  height: 90px;
+  color: #fff;
 }
 
 .header-logo {
-    font-size: 36px;
-    float: left;
-    padding: 20px 40px 20px 40px;
+  font-size: 36px;
+  float: left;
+  padding: 20px 40px;
 }
 
-.main {
-    background-color: bisque;
-    height: 200px;
+.header-list li {
+  display: inline-block;
+  padding: 33px 20px;
+}
+
+.top-wrapper {
+  padding: 100px 80px;
+}
+
+.top-title {
+  font-size: 140px;
+}
+
+.top-title span {
+  color: #ff4a4a;
+}
+
+.top-wrapper h2 {
+  font-size: 60px;
+}
+
+.lesson-wrapper {
+  padding: 0px 80px 100px 80px;
+  height: 500px;
+}
+
+.title {
+  border-bottom: 2px #dee7ec solid;
+  font-size: 28px;
+  padding-bottom: 15px;
+  margin-bottom: 50px;
+}
+
+.lessons {
+  float: left;
+  margin-right: 40px;
+}
+
+.lessons p {
+  margin-top: 30px;
+  font-size: 24px;
+}
+
+.contact-form {
+  padding: 0 80px 100px 80px;
+}
+
+.contacts {
+  width: 400px;
+}
+
+.contact-form p {
+  margin-bottom: 10px;
+}
+
+.contacts input {
+  font-size: 18px;
+  padding: 20px;
+  margin-bottom: 30px;
+  width: 400px;
+  border: 1px #dee7ec solid;
+}
+
+.contacts textarea {
+  width: 400px;
+  font-size: 18px;
+  margin-bottom: 30px;
+  border: 1px #dee7ec solid;
+  padding: 20px;
+}
+
+.submit-btn {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #889eab;
+  padding: 20px;
+  background-color: #dee7ec;
 }
 
 .footer {
-    background-color: cadetblue;
-    height: 30px;
+  height: 120px;
+  padding: 40px;
+  background-color: #2f5167;
+  color: #fff;
+}
+
+.footer-logo {
+  font-size: 32px;
+  float: left;
+}
+
+.footer-list {
+  float: right;
+}
+
+.footer-list li {
+  padding-bottom: 20px;
 }
 
